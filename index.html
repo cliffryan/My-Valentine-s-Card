@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .heart {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+            animation: beat 1s infinite alternate;
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart:before {
+            top: -25px;
+            left: 0;
+        }
+        .heart:after {
+            left: 25px;
+            top: 0;
+        }
+        @keyframes beat {
+            0% { transform: translateX(-50%) rotate(-45deg) scale(1); }
+            100% { transform: translateX(-50%) rotate(-45deg) scale(1.2); }
+        }
+        h1 {
+            color: red;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart"></div>
+        <h1>Happy Valentine's Day!</h1>
+        <p>Thankyou For Always Loving me MyLove💖</p>
+        <div class="image-container">
+            <img src="C:\Users\CLIFF\Downloads\476193984_1648827599174771_249043317123406793_n.jpg" alt="Valentine's Image">
+        </div>
+    </div>
+</body>
+</html>
